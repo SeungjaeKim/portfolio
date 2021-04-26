@@ -82,3 +82,14 @@ promotionToggleBtn.addEventListener('click', function(){
   }
 });
 
+function floatingObject(selector){
+  //gsap.to(요소, 시간, 옵션);
+  gsap.to(selector, 1, {
+    y: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: Power1.easeInOut,
+    delay: 1
+  })
+}
+floatingObject('.floating');
