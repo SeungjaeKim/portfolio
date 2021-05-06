@@ -45,7 +45,6 @@ header .inner h1 {
 .contents .inner .subject-list {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .contents .inner .subject-list .subject-content {
 
