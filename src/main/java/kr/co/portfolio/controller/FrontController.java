@@ -13,7 +13,7 @@ public class FrontController {
         return "starbucks.html";
     }
 
-    @GetMapping("/starbucks/signin")
+    @GetMapping("/signin")
     public String starbucksLogin(){
         return "/signin/signin.html";
     }
