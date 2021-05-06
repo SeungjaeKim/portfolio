@@ -10,16 +10,16 @@ public class FrontController {
 
     @GetMapping("/starbucks")
     public String starbucks(){
-        return "starbucks.html";
+        return "starbucks";
     }
 
     @GetMapping("/signin")
     public String starbucksLogin(){
-        return "/signin/signin.html";
+        return "signin/signin";
     }
 
     @GetMapping("/overwatch")
     public String overwatch(){
-        return "overwatch.html";
+        return "overwatch";
     }
 }
