@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/front")
 public class FrontController {
 
-    @GetMapping("/main")
-    public String front(){
-        return "index.html";
+    @GetMapping("/starbucks")
+    public String starbucks(){
+        return "starbucks.html";
+    }
+
+    @GetMapping("/overwatch")
+    public String overwatch(){
+        return "overwatch.html";
     }
 }
