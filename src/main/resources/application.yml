@@ -1,2 +1,36 @@
 server:
-  port: 8090
+  port: 80
+
+#MySql 연결 설정
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      jdbc-url: jdbc:mysql://studymc.com:3306/studymc?serverTimezome=UTC
+      username: studymc
+      password: ksj1225!
+
+  # 실행되는 쿼리 콘솔 출력
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+#쿼리에 물음표로 출력되는 바인드 파라미터 출력
+logging:
+  level:
+    org.hibernate.type.descriptor.sql : trace
+
+#네이버 API
+naver:
+  url:
+    search:
+      local: https://openapi.naver.com/v1/search/local.json
+      image: https://openapi.naver.com/v1/search/image
+  client:
+    id: fjpIB_ZNXnVqL6KA5_Hz
+    secret: t_Tpd3adPD
