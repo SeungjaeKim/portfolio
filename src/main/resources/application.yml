@@ -17,7 +17,7 @@ spring:
         show_sql: true
         format_sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect
 
 #쿼리에 물음표로 출력되는 바인드 파라미터 출력
@@ -32,5 +32,6 @@ naver:
       local: https://openapi.naver.com/v1/search/local.json
       image: https://openapi.naver.com/v1/search/image
   client:
-    id: fjpIB_ZNXnVqL6KA5_Hz
-    secret: t_Tpd3adPD
+    id:
+    secret:
+
