@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "chatgpt")
 public class ChatgptProperties {
 
-    private String apiKey = "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";
+    private String apiKey = "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";
 
     private String model = "text-davinci-003";
 
