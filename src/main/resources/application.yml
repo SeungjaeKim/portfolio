@@ -8,7 +8,7 @@ spring:
     hikari:
       jdbc-url: jdbc:mysql://studymc.com:3306/studymc?serverTimezome=UTC
       username: studymc
-      password: ksj1225!
+      password: #######
 
   # 실행되는 쿼리 콘솔 출력
   jpa:
